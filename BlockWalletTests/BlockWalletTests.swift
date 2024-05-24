@@ -5,6 +5,13 @@
 //  Created by Jairo Laurente on 23/05/24.
 //
 
+//
+//  BlockWalletTests.swift
+//  BlockWalletTests
+//
+//  Created by Jairo Laurente on 23/05/24.
+//
+
 import XCTest
 @testable import BlockWallet
 
@@ -13,7 +20,7 @@ final class BlockWalletTests: XCTestCase {
     func testBlockWalletInitialization(){
         
         //Given or Arranque
-        /*
+        
         let id = "bitcoin"
         let symbol = "btc"
         let name = "bitcoin"
@@ -39,18 +46,44 @@ final class BlockWalletTests: XCTestCase {
         let atlChangePercentage = 18.0
         let atlDate = "01/05/2024"
         let lastUpdated = "03/05/2024"
-        let sparklineIn7D:SparklineIn7D
         let priceChangePercentage24HInCurrency = 19.0
         let currentHoldins = 20.0
-        */
+        
         //when or Act
-        /*
-        let coin = BlockWalletModel(id: id, symbol: symbol, name: name, image: image, currentPrice: currentPrice, marketCap: marketCap, marketCapRank: marketCapRank, fullyDilutedValuation: fullyDilutedValuation, totalVolume: totalVolume, high24H: high24H, low24H: low24H, priceChange24H: priceChange24H, priceChangePercentage24H: priceChangePercentage24H, marketCapChange24H: marketCapChange24H, marketCapChangePercentage24H: marketCapChangePercentage24H, circulatingSupply: circulatingSupply, totalSupply: totalSupply, maxSupply: maxSupply, ath: ath, athChangePercentage: athChangePercentage, athDate: athDate, atl: atl, atlChangePercentage: atlChangePercentage, atlDate: atlDate, lastUpdated: lastUpdated, sparklineIn7D: price[0.1,0.2], priceChangePercentage24HInCurrency: priceChangePercentage24HInCurrency, currentHoldins: currentHoldins)
-        */
+        
+        let coin = BlockWalletModel(id: id, symbol: symbol, name: name, image: image, currentPrice: currentPrice, marketCap: marketCap, marketCapRank: marketCapRank, fullyDilutedValuation: fullyDilutedValuation, totalVolume: totalVolume, high24H: high24H, low24H: low24H, priceChange24H: priceChange24H, priceChangePercentage24H: priceChangePercentage24H, marketCapChange24H: marketCapChange24H, marketCapChangePercentage24H: marketCapChangePercentage24H, circulatingSupply: circulatingSupply, totalSupply: totalSupply, maxSupply: maxSupply, ath: ath, athChangePercentage: athChangePercentage, athDate: athDate, atl: atl, atlChangePercentage: atlChangePercentage, atlDate: atlDate, lastUpdated: lastUpdated, sparklineIn7D: nil, priceChangePercentage24HInCurrency: priceChangePercentage24HInCurrency, currentHoldins: currentHoldins)
+        
+            //then or Assert
+        
+        XCTAssertEqual(coin.id, id)
+        XCTAssertEqual(coin.symbol, symbol)
+        XCTAssertEqual(coin.name, name)
+        XCTAssertEqual(coin.image, image)
+        XCTAssertEqual(coin.currentPrice, currentPrice)
+        XCTAssertEqual(coin.marketCap, marketCap)
+        XCTAssertEqual(coin.marketCapRank, marketCapRank)
+        XCTAssertEqual(coin.fullyDilutedValuation, fullyDilutedValuation)
+        XCTAssertEqual(coin.totalVolume, totalVolume)
+        XCTAssertEqual(coin.high24H, high24H)
+        XCTAssertEqual(coin.low24H, low24H)
+        XCTAssertEqual(coin.priceChange24H, priceChange24H)
+        XCTAssertEqual(coin.priceChangePercentage24H, priceChangePercentage24H)
+        XCTAssertEqual(coin.marketCapChange24H, marketCapChange24H)
+        XCTAssertEqual(coin.marketCapChangePercentage24H, marketCapChangePercentage24H)
+        XCTAssertEqual(coin.circulatingSupply, circulatingSupply)
+        XCTAssertEqual(coin.totalSupply, totalSupply)
+        XCTAssertEqual(coin.maxSupply, maxSupply)
+        XCTAssertEqual(coin.ath, ath)
+        XCTAssertEqual(coin.athChangePercentage, athChangePercentage)
+        XCTAssertEqual(coin.athDate, athDate)
+        XCTAssertEqual(coin.atl, atl)
+        XCTAssertEqual(coin.atlChangePercentage, atlChangePercentage)
+        XCTAssertEqual(coin.atlDate, atlDate)
+        XCTAssertEqual(coin.lastUpdated, lastUpdated)
+        XCTAssertEqual(coin.priceChangePercentage24HInCurrency, priceChangePercentage24HInCurrency)
+        XCTAssertEqual(coin.currentHoldins, currentHoldins)
     }
-    class SparklineIn7D {
-        let price: [Double]? = nil
-    }
+   
     
     /*
     override func setUpWithError() throws {

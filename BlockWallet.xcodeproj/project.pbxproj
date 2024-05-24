@@ -18,6 +18,9 @@
 		9B08FD942BFEDE6D00DFE370 /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD932BFEDE6D00DFE370 /* PrincipalView.swift */; };
 		9B08FD962BFEE43900DFE370 /* CoinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD952BFEE43900DFE370 /* CoinDetailView.swift */; };
 		9B08FD982BFEE9AD00DFE370 /* SearchCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD972BFEE9AD00DFE370 /* SearchCoinView.swift */; };
+		9B3848162C00EB3C0090AACA /* DataCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B3848142C00EB3C0090AACA /* DataCoin.xcdatamodeld */; };
+		9B38481A2C00F58B0090AACA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3848192C00F58B0090AACA /* Launch Screen.storyboard */; };
+		9B38481C2C00FAB60090AACA /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B38481B2C00FAB60090AACA /* UserView.swift */; };
 		9BD0435A2BFFD92600F5AFA6 /* AddNewCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD043592BFFD92600F5AFA6 /* AddNewCoin.swift */; };
 		9BD0435F2BFFFD3D00F5AFA6 /* DataNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0435E2BFFFD3D00F5AFA6 /* DataNetwork.swift */; };
 		9BD043692C004C5200F5AFA6 /* BlockWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD043682C004C5200F5AFA6 /* BlockWalletTests.swift */; };
@@ -49,6 +52,9 @@
 		9B08FD932BFEDE6D00DFE370 /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		9B08FD952BFEE43900DFE370 /* CoinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailView.swift; sourceTree = "<group>"; };
 		9B08FD972BFEE9AD00DFE370 /* SearchCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinView.swift; sourceTree = "<group>"; };
+		9B3848152C00EB3C0090AACA /* DataCoin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataCoin.xcdatamodel; sourceTree = "<group>"; };
+		9B3848192C00F58B0090AACA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9B38481B2C00FAB60090AACA /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		9BD043592BFFD92600F5AFA6 /* AddNewCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCoin.swift; sourceTree = "<group>"; };
 		9BD0435E2BFFFD3D00F5AFA6 /* DataNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataNetwork.swift; sourceTree = "<group>"; };
 		9BD043662C004C5200F5AFA6 /* BlockWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				9B08FD592BFE87E000DFE370 /* BlockWalletApp.swift */,
+				9B3848192C00F58B0090AACA /* Launch Screen.storyboard */,
+				9B08FD702BFEBAC900DFE370 /* MenuViews */,
 				9B08FD6E2BFEBAB700DFE370 /* Model */,
-				9B08FD702BFEBAC900DFE370 /* Menu */,
 				9B08FD6D2BFEBAAF00DFE370 /* ViewModel */,
 				9B08FD6F2BFEBABF00DFE370 /* Service */,
 				9B08FD5D2BFE87E300DFE370 /* Assets.xcassets */,
@@ -138,19 +145,21 @@
 			children = (
 				9B08FD692BFE8EF100DFE370 /* NetworkAPI.swift */,
 				9BD0435E2BFFFD3D00F5AFA6 /* DataNetwork.swift */,
+				9B3848142C00EB3C0090AACA /* DataCoin.xcdatamodeld */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		9B08FD702BFEBAC900DFE370 /* Menu */ = {
+		9B08FD702BFEBAC900DFE370 /* MenuViews */ = {
 			isa = PBXGroup;
 			children = (
-				9B08FD5B2BFE87E000DFE370 /* ContentView.swift */,
 				9B08FD932BFEDE6D00DFE370 /* PrincipalView.swift */,
-				9B08FD912BFED52700DFE370 /* SegmentedCardView.swift */,
+				9B08FD5B2BFE87E000DFE370 /* ContentView.swift */,
+				9BD0436F2C00534000F5AFA6 /* FavoriteView.swift */,
+				9B38481B2C00FAB60090AACA /* UserView.swift */,
 				9B08FD902BFEC2B300DFE370 /* DetailsView */,
 			);
-			path = Menu;
+			path = MenuViews;
 			sourceTree = "<group>";
 		};
 		9B08FD902BFEC2B300DFE370 /* DetailsView */ = {
@@ -158,7 +167,7 @@
 			children = (
 				9B08FD8E2BFEC2A900DFE370 /* CoinListView.swift */,
 				9B08FD952BFEE43900DFE370 /* CoinDetailView.swift */,
-				9BD0436F2C00534000F5AFA6 /* FavoriteView.swift */,
+				9B08FD912BFED52700DFE370 /* SegmentedCardView.swift */,
 				9B08FD972BFEE9AD00DFE370 /* SearchCoinView.swift */,
 				9BD043592BFFD92600F5AFA6 /* AddNewCoin.swift */,
 			);
@@ -255,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B38481A2C00F58B0090AACA /* Launch Screen.storyboard in Resources */,
 				9B08FD612BFE87E300DFE370 /* Preview Assets.xcassets in Resources */,
 				9B08FD5E2BFE87E300DFE370 /* Assets.xcassets in Resources */,
 			);
@@ -277,8 +287,10 @@
 				9B08FD5C2BFE87E000DFE370 /* ContentView.swift in Sources */,
 				9B08FD5A2BFE87E000DFE370 /* BlockWalletApp.swift in Sources */,
 				9BD043722C00677F00F5AFA6 /* CoinDetailModel.swift in Sources */,
+				9B38481C2C00FAB60090AACA /* UserView.swift in Sources */,
 				9BD0435A2BFFD92600F5AFA6 /* AddNewCoin.swift in Sources */,
 				9B08FD942BFEDE6D00DFE370 /* PrincipalView.swift in Sources */,
+				9B3848162C00EB3C0090AACA /* DataCoin.xcdatamodeld in Sources */,
 				9B08FD6C2BFE920F00DFE370 /* BlockWalletViewModel.swift in Sources */,
 				9B08FD962BFEE43900DFE370 /* CoinDetailView.swift in Sources */,
 				9BD0435F2BFFFD3D00F5AFA6 /* DataNetwork.swift in Sources */,
@@ -442,6 +454,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,6 +483,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -550,6 +564,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9B3848142C00EB3C0090AACA /* DataCoin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9B3848152C00EB3C0090AACA /* DataCoin.xcdatamodel */,
+			);
+			currentVersion = 9B3848152C00EB3C0090AACA /* DataCoin.xcdatamodel */;
+			path = DataCoin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9B08FD4E2BFE87E000DFE370 /* Project object */;
 }

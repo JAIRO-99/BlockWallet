@@ -18,6 +18,7 @@ class BlockWalletViewModel: ObservableObject{
     private let service = NetworkAPI.shared
   //  private let dataNetwork = DataNetwork()
     
+    //FILTRADO DE COINS
      var filteredCoins:[BlockWalletModel]{
         guard !search.isEmpty else {return coins}
         return coins.filter {$0.id.localizedCaseInsensitiveContains(search)
@@ -67,6 +68,35 @@ class BlockWalletViewModel: ObservableObject{
         coins.append(newCoin)
        // save()
     }
+    
+    
+    
+    //BORRAR COIN DE LA LISTA coins
+    func deleteCoin(id: String){
+        coins.removeAll(where: {$0.id == id})
+    }
+    
+    //BORRAR COIN DE LA LISTA FAVORITOS
+    func deleteCoinFavorites(id: String){
+        favoriteCoins.removeAll(where: {$0.id == id})
+    }
+    
+    //TOOGLE PARA FAVORITOS
+    func toggleFavorite(coin: BlockWalletModel) {
+        if let index = favoriteCoins.firstIndex(where: { $0.id == coin.id }) {
+            favoriteCoins.remove(at: index)
+        } else {
+            favoriteCoins.append(coin)
+        }
+        // PUBLICA LA ACTUALIZACIÓN
+        objectWillChange.send()
+    }
+    
+    func isFavorite(coin: BlockWalletModel) -> Bool {
+        return favoriteCoins.contains(where: { $0.id == coin.id })
+    }
+    
+    //GUARDADO DE DATOS
     /*
     func save(){
         let newCoin = CoinEntity(context: DataNetwork.shared.container.viewContext)
@@ -76,28 +106,5 @@ class BlockWalletViewModel: ObservableObject{
         DataNetwork.shared.save()
     }
     */
-    
-    //BORRAR COIN DE LA LISTA coins
-    func deleteCoin(id: String){
-        coins.removeAll(where: {$0.id == id})
-    }
-    
-    func deleteCoinFavorites(id: String){
-        favoriteCoins.removeAll(where: {$0.id == id})
-    }
-    
-    func toggleFavorite(coin: BlockWalletModel) {
-        if let index = favoriteCoins.firstIndex(where: { $0.id == coin.id }) {
-            favoriteCoins.remove(at: index)
-        } else {
-            favoriteCoins.append(coin)
-        }
-        // Publica la actualización
-        objectWillChange.send()
-    }
-    
-    func isFavorite(coin: BlockWalletModel) -> Bool {
-        return favoriteCoins.contains(where: { $0.id == coin.id })
-    }
     
 }

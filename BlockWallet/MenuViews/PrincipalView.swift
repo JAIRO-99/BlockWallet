@@ -31,7 +31,7 @@ struct PrincipalView: View {
                         .navigationTitle("Favoritos")
                     default:
                         NavigationView{
-                            Text("5")
+                            UserView()
                         }
                         .navigationTitle("Usuario")
                         }
