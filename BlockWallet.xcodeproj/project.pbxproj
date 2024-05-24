@@ -11,7 +11,6 @@
 		9B08FD5C2BFE87E000DFE370 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD5B2BFE87E000DFE370 /* ContentView.swift */; };
 		9B08FD5E2BFE87E300DFE370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B08FD5D2BFE87E300DFE370 /* Assets.xcassets */; };
 		9B08FD612BFE87E300DFE370 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B08FD602BFE87E300DFE370 /* Preview Assets.xcassets */; };
-		9B08FD682BFE8D2000DFE370 /* BlockWalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD672BFE8D2000DFE370 /* BlockWalletModel.swift */; };
 		9B08FD6A2BFE8EF100DFE370 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD692BFE8EF100DFE370 /* NetworkAPI.swift */; };
 		9B08FD6C2BFE920F00DFE370 /* BlockWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD6B2BFE920F00DFE370 /* BlockWalletViewModel.swift */; };
 		9B08FD8F2BFEC2A900DFE370 /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD8E2BFEC2A900DFE370 /* CoinListView.swift */; };
@@ -19,11 +18,23 @@
 		9B08FD942BFEDE6D00DFE370 /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD932BFEDE6D00DFE370 /* PrincipalView.swift */; };
 		9B08FD962BFEE43900DFE370 /* CoinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD952BFEE43900DFE370 /* CoinDetailView.swift */; };
 		9B08FD982BFEE9AD00DFE370 /* SearchCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD972BFEE9AD00DFE370 /* SearchCoinView.swift */; };
-		9B08FD9A2BFF0E5500DFE370 /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08FD992BFF0E5500DFE370 /* CoinDetailModel.swift */; };
 		9BD0435A2BFFD92600F5AFA6 /* AddNewCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD043592BFFD92600F5AFA6 /* AddNewCoin.swift */; };
-		9BD0435D2BFFFC3F00F5AFA6 /* DataCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0435B2BFFFC3F00F5AFA6 /* DataCoin.xcdatamodeld */; };
 		9BD0435F2BFFFD3D00F5AFA6 /* DataNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0435E2BFFFD3D00F5AFA6 /* DataNetwork.swift */; };
+		9BD043692C004C5200F5AFA6 /* BlockWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD043682C004C5200F5AFA6 /* BlockWalletTests.swift */; };
+		9BD043702C00534000F5AFA6 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0436F2C00534000F5AFA6 /* FavoriteView.swift */; };
+		9BD043722C00677F00F5AFA6 /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD043712C00677F00F5AFA6 /* CoinDetailModel.swift */; };
+		9BD043742C0067B700F5AFA6 /* BlockWalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD043732C0067B700F5AFA6 /* BlockWalletModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BD0436A2C004C5200F5AFA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B08FD4E2BFE87E000DFE370 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B08FD552BFE87E000DFE370;
+			remoteInfo = BlockWallet;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9B08FD562BFE87E000DFE370 /* BlockWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,7 +42,6 @@
 		9B08FD5B2BFE87E000DFE370 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B08FD5D2BFE87E300DFE370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B08FD602BFE87E300DFE370 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9B08FD672BFE8D2000DFE370 /* BlockWalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockWalletModel.swift; sourceTree = "<group>"; };
 		9B08FD692BFE8EF100DFE370 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		9B08FD6B2BFE920F00DFE370 /* BlockWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockWalletViewModel.swift; sourceTree = "<group>"; };
 		9B08FD8E2BFEC2A900DFE370 /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
@@ -39,14 +49,24 @@
 		9B08FD932BFEDE6D00DFE370 /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		9B08FD952BFEE43900DFE370 /* CoinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailView.swift; sourceTree = "<group>"; };
 		9B08FD972BFEE9AD00DFE370 /* SearchCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinView.swift; sourceTree = "<group>"; };
-		9B08FD992BFF0E5500DFE370 /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
 		9BD043592BFFD92600F5AFA6 /* AddNewCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCoin.swift; sourceTree = "<group>"; };
-		9BD0435C2BFFFC3F00F5AFA6 /* DataCoin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataCoin.xcdatamodel; sourceTree = "<group>"; };
 		9BD0435E2BFFFD3D00F5AFA6 /* DataNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataNetwork.swift; sourceTree = "<group>"; };
+		9BD043662C004C5200F5AFA6 /* BlockWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD043682C004C5200F5AFA6 /* BlockWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockWalletTests.swift; sourceTree = "<group>"; };
+		9BD0436F2C00534000F5AFA6 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		9BD043712C00677F00F5AFA6 /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
+		9BD043732C0067B700F5AFA6 /* BlockWalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockWalletModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9B08FD532BFE87E000DFE370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD043632C004C5200F5AFA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				9B08FD582BFE87E000DFE370 /* BlockWallet */,
+				9BD043672C004C5200F5AFA6 /* BlockWalletTests */,
 				9B08FD572BFE87E000DFE370 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9B08FD562BFE87E000DFE370 /* BlockWallet.app */,
+				9BD043662C004C5200F5AFA6 /* BlockWalletTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,10 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				9B08FD592BFE87E000DFE370 /* BlockWalletApp.swift */,
-				9B08FD702BFEBAC900DFE370 /* Menu */,
 				9B08FD6E2BFEBAB700DFE370 /* Model */,
-				9B08FD6F2BFEBABF00DFE370 /* Service */,
+				9B08FD702BFEBAC900DFE370 /* Menu */,
 				9B08FD6D2BFEBAAF00DFE370 /* ViewModel */,
+				9B08FD6F2BFEBABF00DFE370 /* Service */,
 				9B08FD5D2BFE87E300DFE370 /* Assets.xcassets */,
 				9B08FD5F2BFE87E300DFE370 /* Preview Content */,
 			);
@@ -105,10 +127,8 @@
 		9B08FD6E2BFEBAB700DFE370 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9B08FD672BFE8D2000DFE370 /* BlockWalletModel.swift */,
-				9B08FD992BFF0E5500DFE370 /* CoinDetailModel.swift */,
-				9B08FD902BFEC2B300DFE370 /* DetailsView */,
-				9BD0435B2BFFFC3F00F5AFA6 /* DataCoin.xcdatamodeld */,
+				9BD043712C00677F00F5AFA6 /* CoinDetailModel.swift */,
+				9BD043732C0067B700F5AFA6 /* BlockWalletModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +148,7 @@
 				9B08FD5B2BFE87E000DFE370 /* ContentView.swift */,
 				9B08FD932BFEDE6D00DFE370 /* PrincipalView.swift */,
 				9B08FD912BFED52700DFE370 /* SegmentedCardView.swift */,
+				9B08FD902BFEC2B300DFE370 /* DetailsView */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -137,10 +158,20 @@
 			children = (
 				9B08FD8E2BFEC2A900DFE370 /* CoinListView.swift */,
 				9B08FD952BFEE43900DFE370 /* CoinDetailView.swift */,
+				9BD0436F2C00534000F5AFA6 /* FavoriteView.swift */,
 				9B08FD972BFEE9AD00DFE370 /* SearchCoinView.swift */,
 				9BD043592BFFD92600F5AFA6 /* AddNewCoin.swift */,
 			);
 			name = DetailsView;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9BD043672C004C5200F5AFA6 /* BlockWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BD043682C004C5200F5AFA6 /* BlockWalletTests.swift */,
+			);
+			path = BlockWalletTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +194,24 @@
 			productReference = 9B08FD562BFE87E000DFE370 /* BlockWallet.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9BD043652C004C5200F5AFA6 /* BlockWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD0436C2C004C5200F5AFA6 /* Build configuration list for PBXNativeTarget "BlockWalletTests" */;
+			buildPhases = (
+				9BD043622C004C5200F5AFA6 /* Sources */,
+				9BD043632C004C5200F5AFA6 /* Frameworks */,
+				9BD043642C004C5200F5AFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BD0436B2C004C5200F5AFA6 /* PBXTargetDependency */,
+			);
+			name = BlockWalletTests;
+			productName = BlockWalletTests;
+			productReference = 9BD043662C004C5200F5AFA6 /* BlockWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +224,10 @@
 				TargetAttributes = {
 					9B08FD552BFE87E000DFE370 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					9BD043652C004C5200F5AFA6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 9B08FD552BFE87E000DFE370;
 					};
 				};
 			};
@@ -192,6 +245,7 @@
 			projectRoot = "";
 			targets = (
 				9B08FD552BFE87E000DFE370 /* BlockWallet */,
+				9BD043652C004C5200F5AFA6 /* BlockWalletTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +260,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BD043642C004C5200F5AFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,23 +275,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B08FD5C2BFE87E000DFE370 /* ContentView.swift in Sources */,
-				9BD0435D2BFFFC3F00F5AFA6 /* DataCoin.xcdatamodeld in Sources */,
 				9B08FD5A2BFE87E000DFE370 /* BlockWalletApp.swift in Sources */,
-				9B08FD682BFE8D2000DFE370 /* BlockWalletModel.swift in Sources */,
+				9BD043722C00677F00F5AFA6 /* CoinDetailModel.swift in Sources */,
 				9BD0435A2BFFD92600F5AFA6 /* AddNewCoin.swift in Sources */,
 				9B08FD942BFEDE6D00DFE370 /* PrincipalView.swift in Sources */,
 				9B08FD6C2BFE920F00DFE370 /* BlockWalletViewModel.swift in Sources */,
 				9B08FD962BFEE43900DFE370 /* CoinDetailView.swift in Sources */,
 				9BD0435F2BFFFD3D00F5AFA6 /* DataNetwork.swift in Sources */,
 				9B08FD6A2BFE8EF100DFE370 /* NetworkAPI.swift in Sources */,
-				9B08FD9A2BFF0E5500DFE370 /* CoinDetailModel.swift in Sources */,
 				9B08FD982BFEE9AD00DFE370 /* SearchCoinView.swift in Sources */,
 				9B08FD922BFED52700DFE370 /* SegmentedCardView.swift in Sources */,
+				9BD043702C00534000F5AFA6 /* FavoriteView.swift in Sources */,
 				9B08FD8F2BFEC2A900DFE370 /* CoinListView.swift in Sources */,
+				9BD043742C0067B700F5AFA6 /* BlockWalletModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD043622C004C5200F5AFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD043692C004C5200F5AFA6 /* BlockWalletTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BD0436B2C004C5200F5AFA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B08FD552BFE87E000DFE370 /* BlockWallet */;
+			targetProxy = 9BD0436A2C004C5200F5AFA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9B08FD622BFE87E300DFE370 /* Debug */ = {
@@ -408,6 +485,40 @@
 			};
 			name = Release;
 		};
+		9BD0436D2C004C5200F5AFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jairolaurente.BlockWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlockWallet";
+			};
+			name = Debug;
+		};
+		9BD0436E2C004C5200F5AFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jairolaurente.BlockWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlockWallet";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -429,21 +540,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9BD0435B2BFFFC3F00F5AFA6 /* DataCoin.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9BD0435C2BFFFC3F00F5AFA6 /* DataCoin.xcdatamodel */,
+		9BD0436C2C004C5200F5AFA6 /* Build configuration list for PBXNativeTarget "BlockWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD0436D2C004C5200F5AFA6 /* Debug */,
+				9BD0436E2C004C5200F5AFA6 /* Release */,
 			);
-			currentVersion = 9BD0435C2BFFFC3F00F5AFA6 /* DataCoin.xcdatamodel */;
-			name = DataCoin.xcdatamodeld;
-			path = /Users/jairolaurente/Documents/Project/BlockWallet/BlockWallet/Model/DataCoin.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-/* End XCVersionGroup section */
+/* End XCConfigurationList section */
 	};
 	rootObject = 9B08FD4E2BFE87E000DFE370 /* Project object */;
 }

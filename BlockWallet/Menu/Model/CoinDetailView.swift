@@ -101,22 +101,27 @@ struct CoinDetailView: View {
             }
             .navigationTitle(blockWallet.name)
             .navigationBarTitleDisplayMode(.inline)
-            .onAppear{
+            .onAppear {
                 viewModel.getListOfGlobalDescriptions(id: blockWallet.id)
+                isFavorite = viewModel.isFavorite(coin: blockWallet)
             }
             
             //MARCAR COMO FAVORITO
             .toolbar{
                 Button{
-                    isFavorite.toggle()
+                    viewModel.toggleFavorite(coin: blockWallet)
+                   isFavorite = viewModel.isFavorite(coin: blockWallet)
                 }label: {
-                    Image(systemName: "star.fill")
+                    Image(systemName:isFavorite ? "star.fill" : "star")
                         .padding()
                         .frame(width: 50)
                         .background(Color("BluePrincipal"))
                         .clipShape(Circle())
                         .foregroundColor(isFavorite ? .yellow : .white)
+                        
+                        
                 }
+                
         }
             
         }

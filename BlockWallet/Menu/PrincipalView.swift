@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PrincipalView: View {
     
+    @StateObject private var viewModel = BlockWalletViewModel()
     let tabIcons = ["house","star","person"]
     @State var indexSelectedIcons = 0
     
@@ -25,7 +26,7 @@ struct PrincipalView: View {
                         
                         case 1:
                         NavigationView{
-                            Text("2")
+                            FavoriteView()
                         }
                         .navigationTitle("Favoritos")
                     default:
@@ -63,6 +64,7 @@ struct PrincipalView: View {
                     }
                 }
             }
+            .environmentObject(viewModel)
         }
     }
 }

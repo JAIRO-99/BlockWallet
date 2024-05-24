@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel = BlockWalletViewModel()
+    @EnvironmentObject var viewModel: BlockWalletViewModel
     @State var isActive = false
+    @State var coinGlobal = 0
     
     var body: some View {
         VStack{
@@ -35,6 +36,7 @@ struct ContentView: View {
                         .padding(.trailing,145)
                         .font(.headline)
                     
+                
                     Button{
                         isActive = true
                     }label: {
@@ -47,19 +49,55 @@ struct ContentView: View {
                     
                     .padding()
                     
-                    
+                   
                     //
                 }
                 
                 HStack{
-                    SegmentedCardView(title: "Market cup",color: .green)
-                    SegmentedCardView(title: "24h Vol.",color: .red)
-                    SegmentedCardView(title: "Dominance",color: .blue)
+                    SegmentedCardView(title: "Market cup",color: .green){
+                        coinGlobal = 0
+                    }
+                    SegmentedCardView(title: "24h Vol.",color: .red){
+                        coinGlobal = 1
+                    }
+                    SegmentedCardView(title: "C. Price",color: .blue) {
+                        coinGlobal = 2
+                    }
+                   
                 }
                 .padding(.bottom,80)
                 
-                
-                
+                switch coinGlobal{
+                case 0:
+                    VStack{
+                        Text("$\(viewModel.coinGlobal?.marketCap ?? 0.0,specifier: "%.2f")")
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .bold()
+                        HStack{
+                            Image(systemName: viewModel.coinGlobal?.priceChangePercentage24H ?? 0.0 >= 0 ? "triangle.fill" : "arrowtriangle.down.fill")
+                               // .resizable()
+                                .foregroundColor(viewModel.coinGlobal?.priceChangePercentage24H ?? 0.0 >= 0 ? .green : .red)
+                            Text("\(viewModel.coinGlobal?.marketCapChangePercentage24H ?? 0.0)")
+                                .foregroundColor(viewModel.coinGlobal?.priceChangePercentage24H ?? 0.0 >= 0 ? .green : .orange )
+                                .bold()
+                        }
+                    }
+                    .padding(.bottom,250)
+                case 1:
+                    Text("$\(viewModel.coinGlobal?.marketCapChange24H ?? 0.0)")
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .bold()
+                        .padding(.bottom,250)
+                default:
+                    Text("\(viewModel.coinGlobal?.currentPrice ?? 0.0,specifier: "%.2f")USD")
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .bold()
+                        .padding(.bottom,250)
+                }
+                   
             }
             
             
@@ -97,5 +135,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-      
+        .environmentObject(BlockWalletViewModel())
 }
